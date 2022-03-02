@@ -1,3 +1,4 @@
+"""Plotting for initial analysis"""
 from pylab import *
 import pandas as pd
 from pathlib import Path
