@@ -4,7 +4,7 @@ import numpy as np
 from numpy import linspace, zeros
 
 # 1 hour of time unit
-beta = 1/(40*8*24)
+beta = 40000/(40*8*24)
 beta /= 4
 
 
