@@ -4,8 +4,7 @@ import numpy as np
 from numpy import linspace, zeros
 
 # 1 hour of time unit
-beta = 40000/(40*8*24)
-beta /= 4
+beta = 0.25
 
 
 gamma = 1/(15*24)
@@ -13,7 +12,7 @@ D = 365              # Model for D days
 dt = 0.1             # 6 min
 Nt = int(D*24/dt)    # Compute the corresponding number of hours
 s = 1/(24*120)     # Average loss of immunity: 120 days, approximately 4 months
-p = 0.01*0.75           # effect of vaccination
+p = 0.005           # effect of vaccination
 
 t = linspace(0, Nt*dt, Nt+1)
 S = zeros(Nt+1)
