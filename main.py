@@ -2,23 +2,18 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy import linspace, zeros
-import csv
-
-file = open('vaccination by age group.csv') # make the data file readable
-
-csvreader = csv.reader(file)
 
 # 1 hour of time unit
-beta = 50000/(40*8*24)
+beta = 1/(40*8*24)
 beta /= 4
 
 
-gama = 3/(15*24)
+gamma = 1/(15*24)
 D = 365              # Model for D days
 dt = 0.1             # 6 min
 Nt = int(D*24/dt)    # Compute the corresponding number of hours
 s = 1/(24*120)     # Average loss of immunity: 120 days, approximately 4 months
-p = 0.001           # effect of vaccination
+p = 0.01*0.75           # effect of vaccination
 
 t = linspace(0, Nt*dt, Nt+1)
 S = zeros(Nt+1)
@@ -33,14 +28,15 @@ R[0] = 0
 V[0] = 0
 
 
+
 # Euler Forward Equation to solve the differential equations
 
 for k in range(Nt):
     N = S[k] + V[k] + I[k] + R[k] #Keep pop size constant
-    S[k+1] = S[k] - dt*beta*S[k]*(I[k]/N) + dt*s*R[k] - dt*p*S[k]
+    S[k+1] = S[k] - dt*beta*S[k]*I[k]/N + dt*s*R[k] - dt*p*S[k]
     V[k+1] = V[k] + dt*p*S[k]
-    I[k+1] = I[k] + dt*beta*S[k]*I[k]/N - dt*gama*I[k]
-    R[k+1] = R[k] + dt*gama*I[k] - dt*s*R[k]
+    I[k+1] = I[k] + dt*beta*S[k]*I[k]/N - dt*gamma*I[k]
+    R[k+1] = R[k] + dt*gamma*I[k] - dt*s*R[k]
     loss = int(V[k+1] + S[k+1] + R[k+1] + I[k+1]) - \
            int(V[0] + S[0] + R[0] + I[0])
     
