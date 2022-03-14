@@ -4,15 +4,16 @@ import numpy as np
 from numpy import linspace, zeros
 
 # 1 hour of time unit
-beta = 0.0125
+beta = 0.01
+
 
 
 gamma = 1/(30*24)    # Recovery rate 1 in 30 days
 D = 730              # Model for D days
 dt = 0.1             # 6 min
 Nt = int(D*24/dt)    # Compute the corresponding number of hours
-s = 1/(24*180)     # Average loss of immunity: 120 days, approximately 4 months
-p = 0.001*0.65           # vaccination rate * vaccine protection
+s = 1/(24*180)     # Average loss of immunity: 180 days, approximately 6 months
+p = 0.001*0.75           # vaccination rate * vaccine protection
 
 t = linspace(0, Nt*dt, Nt+1)
 S = zeros(Nt+1)
