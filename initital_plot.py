@@ -2,6 +2,7 @@
 from pylab import *
 import pandas as pd
 from pathlib import Path
+import numpy as np
 
 #import datasets
 daily_cases = pd.read_csv('datasets/daily_cases_03022022.csv')
@@ -37,6 +38,7 @@ to_save.parent.mkdir(parents = True, exist_ok = True)
 plot_df.to_csv(to_save)
 
 #plot
+figure(figsize = (15,9), dpi = 80)
 plot(plot_df['daysAfterFirstOutbreak'],plot_df['newCasesBySpecimenDate'], 
 color = 'darkred', label = 'Daily Cases')
 plot(plot_df['daysAfterFirstOutbreak'],plot_df['newPeopleVaccinatedFirstDoseByPublishDate'], 
@@ -46,17 +48,20 @@ color = 'blue', label = 'Second Dose')
 plot(plot_df['daysAfterFirstOutbreak'],plot_df['newPeopleVaccinatedThirdInjectionByPublishDate'], 
 color = '#24B1E0', label = 'Third Dose')
 legend = plt.legend(loc='upper left')
-xlabel('days after first outbreak')
-ylabel('number of individuals')
-title('COVID-19 reported daily cases and daily vaccinations in the UK')
-ticklabel_format(style='plain')
-subplots_adjust(top=0.92,
+xlabel('days after first outbreak', fontsize = 12)
+xticks(np.arange(0, len(plot_df['daysAfterFirstOutbreak']), 30.0))
+xticks(rotation = 50)
+ylabel('number of individuals', fontsize = 12)
+title('COVID-19 reported daily cases and daily vaccinations in the UK', fontsize = 16)
+ticklabel_format(style='scientific')
+subplots_adjust(top=0.94,
 bottom=0.15,
-left=0.2,
+left=0.1,
 right=0.94,
-hspace=0.2,
-wspace=0.2)
-Figure(figsize = [8.4, 4.8])
+hspace=0.1,
+wspace=0.1)
+
+
 
 #save figure
 savefig('figures/initial_analysis.png', dpi = 80)
