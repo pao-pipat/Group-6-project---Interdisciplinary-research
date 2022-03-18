@@ -58,5 +58,6 @@ fig = plt.figure()
 l1, l2, l3, l4 = plt.plot(t/24, S, t/24, I, t/24, R, t/24, V)
 fig.legend((l1, l2, l3, l4), ('S', 'I', 'R', 'V'), 'upper left')
 plt.xlabel('days')
+plt.ylabel('Number of individuals')
 plt.show()
         
