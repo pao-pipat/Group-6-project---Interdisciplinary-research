@@ -16,9 +16,11 @@ Before venturing into any complicated data analysis, we think it would be a grea
 
 # Vaccination and hospitalization for different age group
 From the NHS website, we downloaded cumulative number of vaccination and hospitalization data. However, they are quite messy and need to be tidied up. To start our analysis, we used the loadtxt function to load all the csv files in python. Then we noticed that the vaccination data is devided into more age groups than the hospitalization data, so to compare these data properly, we combined some of the age groups for the vaccination data. The next problem we solved is to work out the daily increase, as these data are all cumulative numbers. So we used several 'for' loops to take the differnece of numbers for each two days. After tidying up our data, we used plt.subplot function to make a plot containing results of four age groups as shown below.
-![](figures/vaccination and hospitalization plot.png)
+![](figures/vaccination_and_hospitalization_plot.png)
+###### **Figure 2** vaccination compared with hospitalization for different age groups
 From the graph, we can see that the hospitalization number of young people (people below 65 years old) is constantly low. We can only conclude that the virus is not serious for young people. But if we look at the trend of curves for the last two plots, the hospitalization number reduced significantly after the peak of vaccination , so we can safely conclude that the vaccine is reducing the number of hospitalization. In another word, the vaccine is very effective and is protecting old people. 
 
 # Proportion of people taking the vaccine
 From our downloaded data, we can also make a bar chart showing the proportion of people taking the vaccine. As we can see, the proportion of old people taking the vaccine is relatively higher, and this is consistent with our result from the previous part: the virus is more serious to old people and the vaccine is protecting old people effectively. 
 ![](figures/group_figure1.png)
+###### **Figure 3** people completed vaccination compared with vaccine registered population plot
