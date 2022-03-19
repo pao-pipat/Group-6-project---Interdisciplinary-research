@@ -26,7 +26,7 @@ From the NHS website, we downloaded cumulative number of vaccination and hospita
 From the graph, we can see that the hospitalization number of young people (people below 65 years old) is constantly low. We can only conclude that the virus does not take a serious form in young people. But if we look at the trend of curves for the last two plots, the hospitalization number reduced significantly after the peak of vaccination , so we can safely conclude that the vaccine is reducing the number of hospitalization. In another word, the vaccine is very effective and is protecting older people from developing serious cases of the disease. 
 
 # Proportion of people taking the vaccine
-From our downloaded data, we can also make a bar chart showing the proportion of people that took the vaccine. As we can see, the proportion of old people taking the vaccine is relatively higher, and this is consistent with our result from the previous part: old people are at higher risk of serious illness form COVID-19 and the vaccine is protecting old people effectively. 
+From our downloaded data, we can also make a bar chart showing the proportion of people that took the vaccine. As we can see, the proportion of old people taking the vaccine is relatively higher, and this is consistent with our result from the previous part: old people are at higher risk of serious illness form COVID-19 and the vaccine is effectively protecting old people. 
 ![](figures/group_figure1.png)
 
 
