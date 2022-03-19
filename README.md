@@ -31,3 +31,5 @@ From our downloaded data, we can also make a bar chart showing the proportion of
 
 
 ###### **Figure 3** people completed vaccination compared with vaccine registered population plot
+
+# How was the model created?
