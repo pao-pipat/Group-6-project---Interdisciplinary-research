@@ -16,28 +16,26 @@ Before venturing into any complicated data analysis, we think it would be a grea
 ## What statastical models did we use?
 Using data from the NHS website, we were able to build different statistical models to interpret the data to answer our research question. 
 
-### Vaccination and hospitalization for different age group
+### Vaccination and hospitalization for different age groups
 
-###### **Figure 1** vaccination compared with hospitalization for different age groups
+###### **Figure 1** Vaccination compared with hospitalization for different age groups
 From the NHS website, we downloaded cumulative number of vaccination and hospitalization data. However, as a lot of data was included which made them quite messy, they needed to be tidied up. To start our analysis, we used the loadtxt function to load all the csv files in python. Then, we noticed that the vaccination data was divided into more age groups than the hospitalization data, so in order to compare these data properly, we combined some of the age groups for the vaccination data. The next problem we encounterded was to work out the daily increase, as these data are all cumulative numbers. So, we used several 'for' loops to take the difference of numbers for each two days. After tidying up our data, we used plt.subplot function to make a plot containing results of four age groups as shown below.
 ![](figures/vaccination_and_hospitalization_plot.png)
 
 From the graph, we can see that the hospitalization number of young people (people below 65 years old) is constantly low. We can only conclude that the virus does not take a serious form in young people. But if we look at the trend of curves for the last two plots, the hospitalization number reduced significantly after the peak of vaccination , so we can safely conclude that the vaccine is reducing the number of hospitalization. In another word, the vaccine is very effective and is protecting older people from developing serious cases of the disease. 
 
 ### Proportion of people taking the vaccine
+
+###### **Figure 2** People who completed vaccination compared with vaccine registered population in the UK plot
 From our downloaded data, we also made a bar chart showing the proportion of people that took the vaccine. 
 ![](figures/group_figure1.png)
 
 As we can see, the proportion of old people taking the vaccine is relatively higher, and this is consistent with our result from the previous part: old people are at higher risk of serious illness form COVID-19 and the vaccine is effectively protecting old people.
 
+### Statistical analysis for vaccines in the SIR model including vaccination
 
-
-###### **Figure 3** people completed vaccination compared with vaccine registered population plot
-
-# How was the model created?
-
+**How was the model created?**
 The model was built based on the idea of the SIR model used in mathematical biology, where each letter means a different category. "S" stands for Susceptible people, "I" stands for Infected people and finally "R" stands for Recover people. Mathematically, this is solved using ordinary differential equations but first let's try to build this model from scratch. Consider the below diagram:
-
-
 ![SIR MODEL](https://user-images.githubusercontent.com/97306014/159141258-193b350f-f7e7-4194-afc9-8cdf190b70f2.png)
 
+###### **Figure 3** Modified SIR Model for 2 years of pandemic

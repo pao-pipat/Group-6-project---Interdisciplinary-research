@@ -19,6 +19,6 @@ plt.bar(ind+width,cum_vaccinated_completed_1,width,label='Completed vaccinated p
 plt.xticks(ind+width/2,age_group)
 plt.xticks(rotation=60)
 plt.ylabel('Number of people')
-plt.title('People completed vaccination compared with\n vaccine registered population in UK')
+plt.title('People who completed vaccination compared with\n vaccine registered population in UK')
 plt.legend(loc='best')
 plt.show()
