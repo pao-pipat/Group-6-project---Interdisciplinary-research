@@ -22,5 +22,3 @@ plt.ylabel('Number of people')
 plt.title('People who completed vaccination compared with\n vaccine registered population in UK')
 plt.legend(loc='best')
 plt.show()
-
-savefig('figures/group_figure1.png', dpi = 80)
