@@ -18,11 +18,10 @@ Using data from the NHS website, we were able to build different statistical mod
 
 ### Vaccination and hospitalization for different age group
 
-###### **Figure 1** initial plot for data analysis
+###### **Figure 1** vaccination compared with hospitalization for different age groups
 From the NHS website, we downloaded cumulative number of vaccination and hospitalization data. However, as a lot of data was included which made them quite messy, they needed to be tidied up. To start our analysis, we used the loadtxt function to load all the csv files in python. Then, we noticed that the vaccination data was divided into more age groups than the hospitalization data, so in order to compare these data properly, we combined some of the age groups for the vaccination data. The next problem we encounterded was to work out the daily increase, as these data are all cumulative numbers. So, we used several 'for' loops to take the difference of numbers for each two days. After tidying up our data, we used plt.subplot function to make a plot containing results of four age groups as shown below.
 ![](figures/vaccination_and_hospitalization_plot.png)
 
-###### **Figure 2** vaccination compared with hospitalization for different age groups
 From the graph, we can see that the hospitalization number of young people (people below 65 years old) is constantly low. We can only conclude that the virus does not take a serious form in young people. But if we look at the trend of curves for the last two plots, the hospitalization number reduced significantly after the peak of vaccination , so we can safely conclude that the vaccine is reducing the number of hospitalization. In another word, the vaccine is very effective and is protecting older people from developing serious cases of the disease. 
 
 ### Proportion of people taking the vaccine
