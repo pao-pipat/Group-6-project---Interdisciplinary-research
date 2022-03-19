@@ -21,10 +21,10 @@ From the NHS website, we downloaded cumulative number of vaccination and hospita
 ![](figures/vaccination_and_hospitalization_plot.png)
 
 ###### **Figure 2** vaccination compared with hospitalization for different age groups
-From the graph, we can see that the hospitalization number of young people (people below 65 years old) is constantly low. We can only conclude that the virus is not serious for young people. But if we look at the trend of curves for the last two plots, the hospitalization number reduced significantly after the peak of vaccination , so we can safely conclude that the vaccine is reducing the number of hospitalization. In another word, the vaccine is very effective and is protecting old people. 
+From the graph, we can see that the hospitalization number of young people (people below 65 years old) is constantly low. We can only conclude that the virus does not take a serious form in young people. But if we look at the trend of curves for the last two plots, the hospitalization number reduced significantly after the peak of vaccination , so we can safely conclude that the vaccine is reducing the number of hospitalization. In another word, the vaccine is very effective and is protecting older people from developing serious cases of the disease. 
 
 # Proportion of people taking the vaccine
-From our downloaded data, we can also make a bar chart showing the proportion of people taking the vaccine. As we can see, the proportion of old people taking the vaccine is relatively higher, and this is consistent with our result from the previous part: the virus is more serious to old people and the vaccine is protecting old people effectively. 
+From our downloaded data, we can also make a bar chart showing the proportion of people that took the vaccine. As we can see, the proportion of old people taking the vaccine is relatively higher, and this is consistent with our result from the previous part: old people are at higher risk of serious illness form COVID-19 and the vaccine is protecting old people effectively. 
 ![](figures/group_figure1.png)
 
 
