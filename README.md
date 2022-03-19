@@ -9,11 +9,11 @@ Since the first outbreak of COVID-19 and the start of the pandemic in the start 
 ## Our research question
 Can we get the same efficacy and effectiveness of the COVID-19 vaccines observed in the clinical trials using our statistical analysis and does it vary depending on the age of the population receiving it?
 
-## What did we get by just looking at the real-world data?
+## 1. What did we get by just looking at the real-world data?
 Before venturing into any complicated data analysis, we think it would be a great starting point to first look at the data available. We managed to retrieve datasets from the NHS for number of cases and vaccinations in the UK (see datasets used) for our analysis. From what we see in the plot (see Figure 1 below) for number of cases and vaccinations against time, 3 peaks of infection can be clearly seen. Roughly starting at the end of the first year of the pandemic, first dose of vaccines are starting to be taken up. This seems to correlate well with the drop of infections. The second dose seems to have further dampened the infection rate during the middle of the second year. However, a small surge of infection rises again in the middle of the second year and it has well been sustained until the third surge of infection towards the end of the second year. Looking at this graph, we can see crude correlations between vaccination rate and infection rate. However, ther might be some caveats such as, for the second and third waves, vaccination rate reaches their peaks before infection rate. This could be because the time needed for the vaccination to develop full immunity within an individual. To see the effect of vaccinations on each age group we then plot another graph for each age group.
 ![](figures/initial_analysis.png)
 
-## What statastical models did we use?
+## 2. What statastical models did we use?
 Using data from the NHS website, we were able to build different statistical models to interpret the data to answer our research question. 
 
 ### Vaccination and hospitalization for different age groups
