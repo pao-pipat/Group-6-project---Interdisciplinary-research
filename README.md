@@ -35,3 +35,5 @@ As we can see, the proportion of old people taking the vaccine is relatively hig
 ###### **Figure 3** people completed vaccination compared with vaccine registered population plot
 
 # How was the model created?
+
+The model was built based on the idea of the SIR model used in mathematical biology, where each letter means a different category. "S" stands for Susceptible people, "I" stands for Infected people and finally "R" stands for Recover people. Mathematically, this is solved using ordinary differential equations but first let's try to build this model from scratch. Consider the below diagram:
