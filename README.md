@@ -12,25 +12,29 @@ Can we get the same efficacy and effectiveness of the COVID-19 vaccines observed
 ## 1. What did we get by just looking at the real-world data?
 Before venturing into any complicated data analysis, we think it would be a great starting point to first look at the data available. We managed to retrieve datasets from the NHS for number of cases and vaccinations in the UK (see datasets used) for our analysis. From what we see in the plot (see Figure 1 below) for number of cases and vaccinations against time, 3 peaks of infection can be clearly seen. Roughly starting at the end of the first year of the pandemic, first dose of vaccines are starting to be taken up. This seems to correlate well with the drop of infections. The second dose seems to have further dampened the infection rate during the middle of the second year. However, a small surge of infection rises again in the middle of the second year and it has well been sustained until the third surge of infection towards the end of the second year. Looking at this graph, we can see crude correlations between vaccination rate and infection rate. However, ther might be some caveats such as, for the second and third waves, vaccination rate reaches their peaks before infection rate. This could be because the time needed for the vaccination to develop full immunity within an individual. To see the effect of vaccinations on each age group we then plot another graph for each age group.
 ![](figures/initial_analysis.png)
+###### **Figure 1** Daily reported cases of COVID-19 and daily vaccinations in the UK
 
 ## 2. What mathematical models did we use?
 Using data from the NHS website, we were able to build different mathematical models to interpret the data to answer our research question. 
 
+
 ### Vaccination and hospitalization for different age groups
 
-###### **Figure 1** Vaccination compared with hospitalization for different age groups
 From the NHS website, we downloaded cumulative number of vaccination and hospitalization data. However, as a lot of data was included which made them quite messy, they needed to be tidied up. To start our analysis, we used the loadtxt function to load all the csv files in python. Then, we noticed that the vaccination data was divided into more age groups than the hospitalization data, so in order to compare these data properly, we combined some of the age groups for the vaccination data. The next problem we encounterded was to work out the daily increase, as these data are all cumulative numbers. So, we used several 'for' loops to take the difference of numbers for each two days. After tidying up our data, we used plt.subplot function to make a plot containing results of four age groups as shown below.
 ![](figures/vaccination_and_hospitalization_plot.png)
+###### **Figure 2** Vaccination compared with hospitalization for different age groups
 
 From the graph, we can see that the hospitalization number of young people (people below 65 years old) is constantly low. We can only conclude that the virus does not take a serious form in young people. But if we look at the trend of curves for the last two plots, the hospitalization number reduced significantly after the peak of vaccination, so we can safely conclude that the vaccine is reducing the number of hospitalization. In another word, the vaccine is very effective and is protecting older people from developing serious cases of the disease. 
+
 
 ### Proportion of people taking the vaccine in the UK
 
 From our downloaded data, we also made a bar chart showing the proportion of people that took the vaccine. \
 ![](figures/proportion_of_vaccination.png)
-###### **Figure 2** People who completed vaccination compared with vaccine registered population in the UK plot
+###### **Figure 3** People who completed vaccination compared with vaccine registered population in the UK plot
 
 As we can see, the proportion of old people taking the vaccine is relatively higher, and this is consistent with our result from the previous part: old people are at higher risk of serious illness form COVID-19 and the vaccine is effectively protecting old people.
+
 
 ### Mathematical analysis for vaccines in the SIR model including vaccination
 
@@ -48,6 +52,7 @@ With all these features, we made a statistical analysis and created graphs for t
 ![SIR MODEL NEW](figures/mod_SIR_model.png)
 ###### **Figure 5** Modified SIR Model for 2 years of pandemic
 
+
 ## Conclusion and discussion
 From our different mathematical analysis, we concluded that: 
 - The virus seems to not take a serious form in young people, based on the number of hospitalised people and the proportion of older people (>50 years old) taking the vaccine is relatively higher than younger people.
@@ -55,6 +60,7 @@ From our different mathematical analysis, we concluded that:
 - The modified SIR model with vaccination included shows that with increasing rate of vaccination, the number of susceptible, infected and recovered individuals decreases. 
 
 Our research question focused on testing if our statistical analysis were in line with results found in clinical trials, regarding the efficiency of the vaccines in protecting people against COVID-19, as well as comparing it based on the age group of the individuals. Based on our analysis of the data, we found that vaccination does in fact reduce the number of serious cases of covid in poeple of an older age group (65-84 years old). Moreover, the population of >50 years old is getting the most vaccinated. We also concluded based on our modified SIR model that an increase of the rate of vaccination is corrolated with a decrease in the number of suceptible, infected and recovered individuals. 
+
 
 ## References
 1.	Olliaro, P., Torreele, E. and Vaillant, M. (2021) COVID-19 vaccine efficacy and effectiveness—the elephant (not) in the room. The Lancet Microbe, 2(7), pp. e279–e280. doi: 10.1016/s2666-5247(21)00069-0.
