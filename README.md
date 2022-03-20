@@ -49,3 +49,10 @@ With all these features, we made a stasticial analysis and created graphs for th
 ![SIR MODEL NEW](figures/mod_SIR_model.png)
 ###### **Figure 5** Modified SIR Model for 2 years of pandemic
 
+
+
+## References
+1.	Olliaro, P., Torreele, E. and Vaillant, M. (2021) COVID-19 vaccine efficacy and effectiveness—the elephant (not) in the room. The Lancet Microbe, 2(7), pp. e279–e280. doi: 10.1016/s2666-5247(21)00069-0.
+2.	Collier, D. A. et al. (2021) Age-related immune response heterogeneity to SARS-CoV-2 vaccine BNT162b2. Nature, 596(7872), pp. 417–422. doi: 10.1038/s41586-021-03739-1.
+3.	Banerjee, A. (2020) CanSino coronavirus vaccine shows immune response in human trial. Available at: https://www.reuters.com/article/us-health-coronavirus-cansinobio-idUSKCN24L1NP (Accessed 28 Feb 2022).
+4.	Boseley, S., Oltermann, P., Hopes rise for end of pandemic as Pfizer says vaccine has 90% efficacy. Available at: https://www.theguardian.com/world/2020/nov/09/covid-19-vaccine-candidate-effective-pfizer-biontech (Accessed 28 Feb 2022).
