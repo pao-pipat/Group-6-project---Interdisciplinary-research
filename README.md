@@ -27,7 +27,7 @@ From the graph, we can see that the hospitalization number of young people (peop
 ### Proportion of people taking the vaccine in the UK
 
 From our downloaded data, we also made a bar chart showing the proportion of people that took the vaccine. \
-![](figures/group_figure1.png)
+![](figures/proportion_of_vaccination.png)
 ###### **Figure 2** People who completed vaccination compared with vaccine registered population in the UK plot
 
 As we can see, the proportion of old people taking the vaccine is relatively higher, and this is consistent with our result from the previous part: old people are at higher risk of serious illness form COVID-19 and the vaccine is effectively protecting old people.
