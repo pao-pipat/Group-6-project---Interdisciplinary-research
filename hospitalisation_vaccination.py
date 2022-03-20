@@ -130,5 +130,5 @@ ax3.legend(['number of people being vaccinated','number of people being hospital
 ax4.legend(['number of people being vaccinated','number of people being hospitalized'])
 plt.rcParams['axes.spines.right'] = False
 plt.rcParams['axes.spines.top'] = False
-plt.show()
+plt.savefig('figures/vaccination_and_hospitalization_plot.png', dpi = 80)
     

@@ -54,15 +54,10 @@ for k in range(87610, Nt):
         print('loss: %d'  % loss)
 
 
-fig = plt.figure()
+fig = plt.figure(figsize=(10,5))
 l1, l2, l3, l4 = plt.plot(t/24, S, t/24, I, t/24, R, t/24, V)
 fig.legend((l1, l2, l3, l4), ('S', 'I', 'R', 'V'), 'upper left')
 plt.xlabel('days')
-<<<<<<< Updated upstream
 plt.title('Modified SIR Model for 2 years of pandemic')
 plt.ylabel('Number of individuals')
-plt.show()
-=======
-plt.show()
-        
->>>>>>> Stashed changes
+plt.savefig('figures/mod_SIR_model.png', dpi = 80)
