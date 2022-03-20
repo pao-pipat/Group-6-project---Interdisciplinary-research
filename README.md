@@ -55,7 +55,7 @@ Now, in case that the rate at which individuals become infected is bigger than t
 Our new model, with vaccination, was based on the SIR model, but we added the compartment of "Vaccinated people". Since more people are vaccinated, the infected people would get reduced since they have immunity by the vaccine. The differential equation characterized the Vaccinated state is that the rate of change of vaccinated people equals with the starting of vaccinated people plus a constant of vaccine efficiency times the number of Susceptible people times the time interval that vaccination occurs. In addition, we account for another constant which reflects the "Average loss of immunity" since as proven, the vaccines "lose" their strength after a certain period of time, and this was included in the model produced.
 With all these features, we made a statistical analysis and created graphs for the COVID-19 pandemic before and after vaccination.
 ![SIR MODEL NEW](figures/mod_SIR_model.png)
-###### **Figure 5** Modfied SIR model including the number of vaccinated individuals for COVID-19 for 2 years of pandemic
+###### **Figure 5** Modified SIR model including the number of vaccinated individuals for COVID-19 for 2 years of pandemic. 
 
 
 ## Conclusion and discussion
@@ -64,7 +64,7 @@ From our different mathematical analysis, we concluded that:
 - Vaccination against COVID-19 is very effective in protecting older people from developing serious cases of the disease and being hospitalised for it.
 - The modified SIR model with vaccination included shows that with increasing rate of vaccination, the number of susceptible, infected and recovered individuals decreases. 
 
-Our research question focused on testing if our statistical analysis were in line with results found in clinical trials, regarding the efficiency of the vaccines in protecting people against COVID-19, as well as comparing it based on the age group of the individuals. Based on our analysis of the data, we found that vaccination does in fact reduce the number of serious cases of covid in poeple of an older age group (65-84 years old). Moreover, the population of >50 years old is getting the most vaccinated. We also concluded based on our modified SIR model that an increase of the rate of vaccination is corrolated with a decrease in the number of suceptible, infected and recovered individuals. 
+Our research question focused on testing if our statistical analysis were in line with results found in clinical trials, regarding the efficiency of the vaccines in protecting people against COVID-19, as well as comparing it based on the age group of the individuals. Based on our analysis of the data, we found that vaccination does in fact reduce the number of serious cases of covid in poeple of an older age group (65-84 years old). Moreover, the population of >50 years old is getting the most vaccinated. We also concluded based on our modified SIR model that an increase of the rate of vaccination is corrolated with a decrease in the number of suceptible, infected and recovered individuals. However, our model did not predict the second and third waves as happened in real world data. This further emphasises how new variants, not just waning immunity, drive the new waves of infection. Unfortunately, we have not succeeded in statistically analysing how reliable our model is. This could be an extension for future project.
 
 
 ## References
