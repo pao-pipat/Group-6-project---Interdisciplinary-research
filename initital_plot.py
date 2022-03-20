@@ -3,6 +3,7 @@ from pylab import *
 import pandas as pd
 from pathlib import Path
 import numpy as np
+import matplotlib as mpl
 
 #import datasets
 daily_cases = pd.read_csv('datasets/daily_cases_03022022.csv')
@@ -60,7 +61,8 @@ left=0.1,
 right=0.94,
 hspace=0.1,
 wspace=0.1)
-
+mpl.rcParams['axes.spines.right'] = False
+mpl.rcParams['axes.spines.top'] = False
 
 
 #save figure
