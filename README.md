@@ -14,7 +14,7 @@ Before venturing into any complicated data analysis, we think it would be a grea
 ![](figures/initial_analysis.png)
 
 ## 2. What mathematical models did we use?
-Using data from the NHS website, we were able to build different statistical models to interpret the data to answer our research question. 
+Using data from the NHS website, we were able to build different mathematical models to interpret the data to answer our research question. 
 
 ### Vaccination and hospitalization for different age groups
 
