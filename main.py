@@ -39,9 +39,6 @@ for k in range(Nt):
     loss = int(V[k+1] + S[k+1] + R[k+1] + I[k+1]) - \
            int(V[0] + S[0] + R[0] + I[0])
     
-    if loss > 0: # include death
-        print('loss: %d'  % loss)
-
 
 fig = plt.figure()
 l1, l2, l3, l4 = plt.plot(t, S, t, I, t, R, t, V)
