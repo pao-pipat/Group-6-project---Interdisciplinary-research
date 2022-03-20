@@ -49,7 +49,12 @@ With all these features, we made a statistical analysis and created graphs for t
 ###### **Figure 5** Modified SIR Model for 2 years of pandemic
 
 ## Conclusion and discussion
+From our different mathematical analysis, we concluded that: 
+- The virus seems to not take a serious form in young people, based on the number of hospitalised people and the proportion of older people (>50 years old) taking the vaccine is relatively higher than younger people.
+- Vaccination against COVID-19 is very effective in protecting older people from developing serious cases of the disease and being hospitalised for it.
+- The modified SIR model with vaccination included shows that with increasing rate of vaccination, the number of susceptible, infected and recovered individuals decreases. 
 
+Our research question focused on testing if our statistical analysis were in line with results found in clinical trials, regarding the efficiency of the vaccines in protecting people against COVID-19, as well as comparing it based on the age group of the individuals. Based on our analysis of the data, we found that vaccination does in fact reduce the number of serious cases of covid in poeple of an older age group (65-84 years old). Moreover, the population of >50 years old is getting the most vaccinated. We also concluded based on our modified SIR model that an increase of the rate of vaccination is corrolated with a decrease in the number of suceptible, infected and recovered individuals. 
 
 ## References
 1.	Olliaro, P., Torreele, E. and Vaillant, M. (2021) COVID-19 vaccine efficacy and effectiveness—the elephant (not) in the room. The Lancet Microbe, 2(7), pp. e279–e280. doi: 10.1016/s2666-5247(21)00069-0.
