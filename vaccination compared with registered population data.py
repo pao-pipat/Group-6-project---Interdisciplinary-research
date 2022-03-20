@@ -21,6 +21,8 @@ plt.xticks(rotation=60)
 plt.ylabel('Number of people')
 plt.title('People who completed vaccination compared with\n vaccine registered population in UK')
 plt.legend(loc='best')
-plt.rcParams['axes.spines.right'] = False
-plt.rcParams['axes.spines.top'] = False
+# plt.rcParams['axes.spines.right'] = False
+# plt.rcParams['axes.spines.top'] = False
+# axes.spines.right : False
+# axes.spines.top : False
 plt.show()
