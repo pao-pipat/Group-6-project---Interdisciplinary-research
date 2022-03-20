@@ -49,7 +49,7 @@ With all these features, we made a stasticial analysis and created graphs for th
 ![SIR MODEL NEW](figures/mod_SIR_model.png)
 ###### **Figure 5** Modified SIR Model for 2 years of pandemic
 
-
+## Conclusion and discussion
 
 ## References
 1.	Olliaro, P., Torreele, E. and Vaillant, M. (2021) COVID-19 vaccine efficacy and effectiveness—the elephant (not) in the room. The Lancet Microbe, 2(7), pp. e279–e280. doi: 10.1016/s2666-5247(21)00069-0.
