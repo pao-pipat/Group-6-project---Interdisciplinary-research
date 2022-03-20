@@ -26,20 +26,20 @@ From the graph, we can see that the hospitalization number of young people (peop
 
 ### Proportion of people taking the vaccine in the UK
 
-###### **Figure 2** People who completed vaccination compared with vaccine registered population in the UK plot
-From our downloaded data, we also made a bar chart showing the proportion of people that took the vaccine. 
+From our downloaded data, we also made a bar chart showing the proportion of people that took the vaccine. \
 ![](figures/group_figure1.png)
+###### **Figure 2** People who completed vaccination compared with vaccine registered population in the UK plot
 
 As we can see, the proportion of old people taking the vaccine is relatively higher, and this is consistent with our result from the previous part: old people are at higher risk of serious illness form COVID-19 and the vaccine is effectively protecting old people.
 
-### Mtahematical analysis for vaccines in the SIR model including vaccination
+### Mathematical analysis for vaccines in the SIR model including vaccination
 
 ### How was the model created? ###
 The model was built based on the idea of the SIR model used in mathematical biology, where each letter means a different category. "S" stands for Susceptible people, "I" stands for Infected people and finally "R" stands for Recover people. Mathematically, this is solved using ordinary differential equations but first let's try to build this model from scratch. Consider the below diagram:
 
 
 ![SIR MODEL NEW](https://user-images.githubusercontent.com/97306014/159160066-409048fd-7d6d-47c2-97a6-04bdb117194f.png)
-
+###### **Figure 3** Modified SIR Model for 2 years of pandemic
 
 Each individual can be only in one compartment at a given time, but can definitely move from one to another. The SIR model is one of the most basic compartmental models, if not the most basic, with 3 compartments (Susceptible, Infected, and Recovered). The assumed progression is for a susceptible individual to become infected through a contact with another individual who is already infected. There is a period as an infected individual, during which that person is assumed to be dangerous, and afterwards the individual advances to state, termed recovery.Not all susceptibles can be infected at once but there is a rate at which susceptible individuals become infected and this is dependent on the number of individuals in each of the susceptible and infected states.When an outbreak starts, there are few infected individuals, which means that the disease spreads in a very slow rythm. As more poeple become infected, they contribute to the faster spread and increase the rate of infection since more people are get infected. We cannot forget an additional factor in calculating the rate of spread, which is the effective contact rate (β). This parameter accounts for the transmissibility of the disease. There are many community mitigation strategies, such as quarantining infected individuals, closing schools, social distancing, which can reduce this value and slow the spread. Although these interventions can alter the movement of individuals from the susceptible state to the infected state, the transition from the infected to the recovered compartment is solely dependent on the amount of time that an individual is contagious, captured in the rate of recovery(γ).
 This model contains only 2 parameters: the effective contact rate (β), which affects the transition from the susceptible compartment to the infected compartment, and the rate of recovery (also known as mortality; γ), which affects the transition from the infected state to the recovered state.
@@ -47,4 +47,4 @@ Now, in case that the rate at which individuals become infected is bigger than t
 Our new model, with vaccination was based on the SIR model but we added the compartment of " Vaccinated people". Since more people are vaccinated, the infected people would get reduced since they have immunity by the vaccine. The differential equation characterized the Vaccinated state is that the rate of change of vaccinated people equals with the starting of vaccinated people plus a constant of vaccine efficiency times the number of Susceptible people times the time interval that vaccination occurs. In addition, we account for another constant which reflects the "Average loss of immunity" since as proven, the vaccines "lose" their strength after a certain period of time, and this was included in the model porduced.
 With all these features, we made a stasticial analysis and created graphs for the COVID-19 pandemic before and after vacciantion.
 
-###### **Figure 3** Modified SIR Model for 2 years of pandemic
+
