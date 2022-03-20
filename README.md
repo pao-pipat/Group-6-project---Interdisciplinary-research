@@ -1,18 +1,23 @@
 # Interdisciplinary Research Computing project: Validating efficacy and effectiveness of the current COVID-19 vaccines on different age groups 
 
+
 ## A bit about ourselves 
 We are four second year students at Imperial College London: Nine Kinnman, Nichakorn Pipatpadungsin (Pao), Jialin Liu (Lester) and Christoforos Georgios Fistouris. Each studying different subject, we brought our skills together, which combined mathematics, medical sciences, and computer science, to create this project studying a global issue that has plagued us for the last two years. Our group advisor, Yiannis Simillides guided us through this project and helped us achieve it.
+
 
 ## Introduction to our interdisciplinary project 
 Since the first outbreak of COVID-19 and the start of the pandemic in the late of 2019, governments and various pharmaceutical companies around the world have collaborated for the development of vaccines against COVID-19. The first vaccine to be approved was the CanSino vaccine in China which was used by the military[3]. Since then, various different types of vaccines have been developed from big pharmaceutical companies, such as Pfizer–BioNTech (mRNA vaccine), Johnson & Johnson (modified adenovirus vaccine), AstraZeneca (modified adenovirus vaccine) and Moderna (mRNA vaccine). COVID-19 vaccines have shown to be effective in the protection against the disease. For example, previous clinical trials have shown Pfizer’s vaccine to have up to 95%[1,4]. Nonetheless, these statistics have changed with age and the emergence of variants of concern [2]. Also, it is still difficult to predict the effectiveness of the same vaccine administered to another population [1]. We think investigating and building a model for the observed effectiveness of covid vaccines could be a good start. Therefore, in this project, we aim to produce a mathematical model to measure an impact of age as a factor in the vaccines’ effectiveness in protecting against COVID-19.
 
+
 ## Our research question
 Can we get the same efficacy and effectiveness of the COVID-19 vaccines observed in the clinical trials using our mathematical analysis and does it vary depending on the age of the population receiving it?
+
 
 ## 1. What did we get by just looking at the real-world data?
 Before venturing into any complicated data analysis, we think it would be a great starting point to first look at the data available. We managed to retrieve datasets from the NHS for number of cases and vaccinations in the UK (see datasets used) for our analysis. From what we see in the plot (see Figure 1 below) for number of cases and vaccinations against time, 3 peaks of infection can be clearly seen. Roughly starting at the end of the first year of the pandemic, first dose of vaccines are starting to be taken up. This seems to correlate well with the drop of infections. The second dose seems to have further dampened the infection rate during the middle of the second year. However, a small surge of infection rises again in the middle of the second year and it has well been sustained until the third surge of infection towards the end of the second year. Looking at this graph, we can see crude correlations between vaccination rate and infection rate. However, ther might be some caveats such as, for the second and third waves, vaccination rate reaches their peaks before infection rate. This could be because the time needed for the vaccination to develop full immunity within an individual. To see the effect of vaccinations on each age group we then plot another graph for each age group.
 ![](figures/initial_analysis.png)
 ###### **Figure 1** Daily reported cases of COVID-19 and daily vaccinations in the UK
+
 
 ## 2. What mathematical models did we use?
 Using data from the NHS website, we were able to build different mathematical models to interpret the data to answer our research question. 
@@ -51,6 +56,7 @@ Our new model, with vaccination, was based on the SIR model, but we added the co
 With all these features, we made a statistical analysis and created graphs for the COVID-19 pandemic before and after vaccination.
 ![SIR MODEL NEW](figures/mod_SIR_model.png)
 ###### **Figure 5** Modfied SIR model including the number of vaccinated individuals for COVID-19 for 2 years of pandemic
+
 
 ## Conclusion and discussion
 From our different mathematical analysis, we concluded that: 
