@@ -50,7 +50,7 @@ Now, in case that the rate at which individuals become infected is bigger than t
 Our new model, with vaccination, was based on the SIR model, but we added the compartment of "Vaccinated people". Since more people are vaccinated, the infected people would get reduced since they have immunity by the vaccine. The differential equation characterized the Vaccinated state is that the rate of change of vaccinated people equals with the starting of vaccinated people plus a constant of vaccine efficiency times the number of Susceptible people times the time interval that vaccination occurs. In addition, we account for another constant which reflects the "Average loss of immunity" since as proven, the vaccines "lose" their strength after a certain period of time, and this was included in the model produced.
 With all these features, we made a statistical analysis and created graphs for the COVID-19 pandemic before and after vaccination.
 ![SIR MODEL NEW](figures/mod_SIR_model.png)
-###### **Figure 5** Modfied SIR model including the Vaccinated number of individuals for COVID-19 for 2 years of pandemic
+###### **Figure 5** Modfied SIR model including the number of vaccinated individuals for COVID-19 for 2 years of pandemic
 
 ## Conclusion and discussion
 From our different mathematical analysis, we concluded that: 
