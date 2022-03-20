@@ -10,11 +10,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-result=np.loadtxt("cumulative_cases.csv",skiprows=1,usecols=(4),unpack=True,delimiter=',')
+result=np.loadtxt("datasets/cumulative_cases.csv",skiprows=1,usecols=(4),unpack=True,delimiter=',')
 result_1=result[::-1]
-result_2=np.loadtxt("vaccination_first_dose.csv",skiprows=1,usecols=4,unpack=True,delimiter=',')
+result_2=np.loadtxt("datasets/vaccination_first_dose.csv",skiprows=1,usecols=4,unpack=True,delimiter=',')
 result_3=result_2[::-1]
-result_4=np.loadtxt("vaccination_second_dose.csv",skiprows=1,usecols=4,unpack=True,delimiter=',')
+result_4=np.loadtxt("datasets/vaccination_second_dose.csv",skiprows=1,usecols=4,unpack=True,delimiter=',')
 result_5=result_4[::-1]
 daily_cases=[]
 daily_vaccination_1=[]
@@ -39,7 +39,7 @@ plt.xlabel('number of days since the pandemic')
 plt.legend(['daily cases','first dose','second dose'])
 plt.show()
 #%%
-vaccination_by_age=np.loadtxt("vaccination_by_age_group.csv",skiprows=1,usecols=(7),unpack=True,delimiter=',')
+vaccination_by_age=np.loadtxt("datasets/vaccination_by_age_group.csv",skiprows=1,usecols=(7),unpack=True,delimiter=',')
 vaccination_12_17=[] #everyday number of people vaccinated between 12 and 17
 for i in range(0,442):#There are 442 days in total
     vaccination_12_17.append(vaccination_by_age[17*i]+vaccination_by_age[17*i+1])   
@@ -60,7 +60,7 @@ for i in range(0,442):
     vaccination_85.append(vaccination_by_age[17*i+15]+vaccination_by_age[17*i+16])
 vaccination_85=vaccination_85[::-1]
     
-hospital_admission=np.loadtxt("hospital_admission.csv",skiprows=1,usecols=(6),unpack=True,delimiter=',')
+hospital_admission=np.loadtxt("datasets/hospital_admission.csv",skiprows=1,usecols=(6),unpack=True,delimiter=',')
 hospitalization_12_17=[] #everyday number of people sent in hospital between 12 and 17
 for i in range(10,716):#There are 716 days in total, and this dataset has 10 days more data than\
     #the previous one, so discard data of these 10 days
