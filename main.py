@@ -36,8 +36,7 @@ for k in range(Nt):
     V[k+1] = V[k] + dt*p*S[k]
     I[k+1] = I[k] + dt*beta*S[k]*I[k]/N - dt*gamma*I[k]
     R[k+1] = R[k] + dt*gamma*I[k] - dt*s*R[k]
-    loss = int(V[k+1] + S[k+1] + R[k+1] + I[k+1]) - \
-           int(V[0] + S[0] + R[0] + I[0])
+  
     
 
 fig = plt.figure()
