@@ -128,5 +128,7 @@ ax1.legend(['number of people being vaccinated','number of people being hospital
 ax2.legend(['number of people being vaccinated','number of people being hospitalized'])
 ax3.legend(['number of people being vaccinated','number of people being hospitalized'])
 ax4.legend(['number of people being vaccinated','number of people being hospitalized'])
+plt.rcParams['axes.spines.right'] = False
+plt.rcParams['axes.spines.top'] = False
 plt.show()
     
